@@ -16,22 +16,22 @@ Init.d installation:<br>
  sudo nano /lib/systemd/system/godaddypy.service<br>
  Add the following and modify "<YOUR PATH TO THIS SCRIPT - RECOMMEND /HOME/PI/GODADDY.PY>"<br>
  
- [Unit]
- Description=My Script Service
- After=multi-user.target
+ [Unit]<br>
+ Description=GoDaddyPy Service<br>
+ After=multi-user.target<br>
  
- [Service]
- Type=idle
- ExecStart=/usr/bin/python <YOUR PATH TO THIS SCRIPT - RECOMMEND /HOME/PI/GODADDY.PY>
+ [Service]<br>
+ Type=idle<br>
+ ExecStart=/usr/bin/python <YOUR PATH TO THIS SCRIPT - RECOMMEND /HOME/PI/GODADDY.PY><br>
  
- [Install]
- WantedBy=multi-user.target
+ [Install]<br>
+ WantedBy=multi-user.target<br>
 
- ExecStart=/usr/bin/python <YOUR PATH AND SCRIPT NAME> > <YOUR PATH AND SERIVICE NAME>.log 2>&1
- sudo chmod 644 /lib/systemd/system/godaddypy.service
- sudo systemctl daemon-reload
- sudo systemctl enable godaddypy.service
- sudo reboot
+ ExecStart=/usr/bin/python <YOUR PATH AND SCRIPT NAME> > <YOUR PATH AND SERIVICE NAME>.log 2>&1<br>
+ sudo chmod 644 /lib/systemd/system/godaddypy.service<br>
+ sudo systemctl daemon-reload<br>
+ sudo systemctl enable godaddypy.service<br>
+ sudo reboot<br>
 
-Test Service:
- sudo journalctl godaddypy.service
+Test Service:<br>
+ sudo journalctl godaddypy.service<br>
