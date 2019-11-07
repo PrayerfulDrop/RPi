@@ -22,19 +22,18 @@ Init.d installation:<br>
  
  [Service]<br>
  Type=idle<br>
- ExecStart=/usr/bin/python <YOUR PATH TO THIS SCRIPT - RECOMMEND /HOME/PI/GODADDY.PY><br>
+ ExecStart=/usr/bin/python3 <YOUR PATH TO THIS SCRIPT - RECOMMEND /HOME/PI/GODADDY.PY><br>
  
  [Install]<br>
  WantedBy=multi-user.target<br>
 
-Setup Logging:
- ExecStart=/usr/bin/python (YOUR PATH AND SCRIPT NAME) > (YOUR PATH AND SERIVICE NAME).log 2>&1<br>
- sudo chmod 644 /lib/systemd/system/godaddypy.service<br>
+<u>Setup Logging:</u>
+sudo chmod 644 /lib/systemd/system/godaddypy.service<br>
 
-Install Service:
+<u>Install Service:</u>
  sudo systemctl daemon-reload<br>
  sudo systemctl enable godaddypy.service<br>
  sudo reboot<br>
 
-Test Service:<br>
+<u>Test Service:<br></u>
  sudo journalctl godaddypy.service<br>
