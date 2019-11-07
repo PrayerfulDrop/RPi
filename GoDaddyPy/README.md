@@ -6,11 +6,11 @@ Edit GoDaddyPy.py and replace User configuration fields with your information
 
 Acquire GoDaddy Production API keys from http://developer.godaddy.com
 
-This script uses the following Python add-ons for RPi:<br>
- sudo pip install godaddypy<br>
- sudo pip install traceback<br>
- sudo pip install ipaddress<br>
- sudo pip install argparse<br>
+This script uses the following Python3 add-ons for RPi:<br>
+ sudo pip3 install godaddypy<br>
+ sudo pip3 install traceback<br>
+ sudo pip3 install ipaddress<br>
+ sudo pip3 install argparse<br>
 
 Init.d installation:<br>
  sudo nano /lib/systemd/system/godaddypy.service<br>
