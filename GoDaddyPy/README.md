@@ -28,7 +28,7 @@ Init.d installation:<br>
  WantedBy=multi-user.target<br>
 
 Setup Logging:
- ExecStart=/usr/bin/python <YOUR PATH AND SCRIPT NAME> > <YOUR PATH AND SERIVICE NAME>.log 2>&1<br>
+ ExecStart=/usr/bin/python (YOUR PATH AND SCRIPT NAME) > (YOUR PATH AND SERIVICE NAME).log 2>&1<br>
  sudo chmod 644 /lib/systemd/system/godaddypy.service<br>
 
 Install Service:
