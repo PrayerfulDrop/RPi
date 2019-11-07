@@ -27,7 +27,7 @@ Init.d installation:<br>
  [Install]<br>
  WantedBy=multi-user.target<br><br>
 
-<u>Setup Logging:</u>
+<u>Setup Logging:</u><br>
 sudo chmod 644 /lib/systemd/system/godaddypy.service<br><br>
 
 <u>Install Service:</u><br>
